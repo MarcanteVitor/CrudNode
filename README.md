@@ -8,7 +8,7 @@
  - História.
  - As vantagens e desvantagens.
  - Citando as principais características.
- - Servidores Web disponíveis.
+ - Algumas marcas que utilizam o Node.js.
  - Configurações necessárias para rodar uma aplicação.
  - Tipo de licença de software.
  - Responsáveis pelo desenvolvimento.
@@ -66,6 +66,17 @@
  - Figma,
  - NASA,
  - Slack.
+
+## ⚙️ Configurações necessárias para rodar uma aplicação:
+ - Realizar o download do node pelo site: [NODE](https://nodejs.org/pt)
+ - Verificar a versão instalada do node e do NPM: `node -v` & `npm -v`
+ - Inicialização de um projeto: `npm init -y`
+ - Realizar instação das dependencias: `npm install express sequelize pg pg-hstore`
+    - express: Criação de servidor web,
+    - sequelize: ORM,
+    - pg: Driver do postgres,
+    - pg-hstore: Auxilia na manipulação de dados.
+
 
 ## 📝 Tipo de licença de software
  - Node.js e Sequelize utilizam o MIT License.
