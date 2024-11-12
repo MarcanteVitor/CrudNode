@@ -93,7 +93,7 @@
     - Criado por Sascha Depold.
     - Atualmente mantido por uma comunidade de desenvolvedores open-source.
    
-## 🤔 Conclusão:
+## Conclusão:
   - Node.js revolucionou o desenvolvimento backend, trazendo o JavaScript para o lado do servidor.
   - Sequelize simplifica a interação com bancos de dados, tornando o desenvolvimento mais rápido e organizado.
   - Sua escolha depende das necessidades do projeto, preferências de arquitetura e do ambiente de produção.
