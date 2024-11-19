@@ -2,7 +2,7 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     await queryInterface.createTable('pessoas', {
       id: {
         type: Sequelize.INTEGER,
@@ -23,19 +23,19 @@ module.exports = {
         type: Sequelize.STRING(15),
       },
       documento: {
-        type: Sequelize.STRING(30), 
+        type: Sequelize.STRING(30),
       },
       data_nascimento: {
         type: Sequelize.DATE,
       },
       cep: {
-        type: Sequelize.FLOAT, 
+        type: Sequelize.FLOAT,
       },
       bairro: {
-        type: Sequelize.STRING(70), 
+        type: Sequelize.STRING(70),
       },
       endereco: {
-        type: Sequelize.STRING(200), 
+        type: Sequelize.STRING(200),
       },
       ativo: {
         type: Sequelize.BOOLEAN,
@@ -45,18 +45,18 @@ module.exports = {
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false,
-        defaultValue: Sequelize.fn('NOW')  // Data atual como valor padrão
+        defaultValue: Sequelize.fn('NOW')
       },
       updatedAt: {
         type: Sequelize.DATE,
         allowNull: false,
-        defaultValue: Sequelize.fn('NOW')  // Atualiza a cada modificação
+        defaultValue: Sequelize.fn('NOW')
       }
     });
 
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('pessoas');
   }
 };

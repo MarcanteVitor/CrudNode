@@ -1,5 +1,5 @@
-const { DataTypes } = require('sequelize'); // CommonJS import
-const database = require('../database/db'); // Importação do banco de dados
+const { DataTypes } = require('sequelize');
+const database = require('../database/db'); 
 
 const Person = database.define('pessoas', {
   id: {
@@ -9,7 +9,7 @@ const Person = database.define('pessoas', {
     primaryKey: true
   },
   codigo: {
-    type: DataTypes.INTEGER,  // Remover o autoIncrement se não for necessário
+    type: DataTypes.INTEGER, 
     allowNull: null
   },
   nome: {
@@ -26,7 +26,7 @@ const Person = database.define('pessoas', {
     type: DataTypes.DATE,
   },
   cep: {
-    type: DataTypes.STRING(9), // Melhor armazenar CEP como string
+    type: DataTypes.STRING(9),
   },
   bairro: {
     type: DataTypes.STRING(70),
@@ -40,7 +40,7 @@ const Person = database.define('pessoas', {
     defaultValue: true
   },
 }, {
-  timestamps: true  // timestamps habilitados para createdAt e updatedAt
+  timestamps: true 
 });
 
 module.exports = Person;
